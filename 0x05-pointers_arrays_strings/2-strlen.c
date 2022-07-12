@@ -6,10 +6,11 @@
  */
 int _strlen(char *s)
 {	
-	char str[];
-	int len;
+	char *str
+	int len, i;
 
-	for(int i = 0; i < sizeof(s); i++)
+	str = malloc(sizeof *str * item);
+	for(i=0; s[i] != '\0'; i++)
 	{
 		str[i] = s[i];
 	}
