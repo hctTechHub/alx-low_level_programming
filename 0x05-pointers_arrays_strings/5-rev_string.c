@@ -7,7 +7,7 @@ void rev_string(char *s)
 {
 	int i,len;
 	
-	len = sizeof(s)/sizeof(*s);
+	len = sizeof(s)/sizeof(char);
 	for ( i  = 0; i < len; i++)
 	{
 		printf("%c", s[i]);
