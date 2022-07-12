@@ -5,10 +5,14 @@
  * @s: character that points to string
  */
 int _strlen(char *s)
-{
-	char str;
+{	
+	char str[];
+	int len;
 
-	str = *s;
-	int len = strlen(str);
+	for(int i = 0; i < sizeof(s); i++)
+	{
+		str[i] = s[i];
+	}
+	len = sizeof(str);
 	return (len);
 }
