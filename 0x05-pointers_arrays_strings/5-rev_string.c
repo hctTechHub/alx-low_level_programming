@@ -7,12 +7,9 @@ void rev_string(char *s)
 {
 	int i;
 
-	for (i = 0; s[i] != '\0'; i++)
-	{}
-	while (i > 0)
+	for (i = 0; i < sizeof(s); i++)
 	{
-		printf("%c", s[i - 1]);
-		i--;
+		printf("%s",s[i - 1]);
 	}
 	printf("\n");
 }
