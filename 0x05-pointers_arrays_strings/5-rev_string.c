@@ -5,11 +5,12 @@
  */
 void rev_string(char *s)
 {
-	int i;
-
-	for (i = 0; i < sizeof(s); i++)
+	int i,len;
+	
+	len = sizeof(s)/sizeof(*s);
+	for ( i  = 0; i < len; i++)
 	{
-		printf("%s",s[i - 1]);
+		printf("%c", s[i]);
 	}
 	printf("\n");
 }
