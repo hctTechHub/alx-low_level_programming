@@ -17,7 +17,7 @@ void puts_half(char *str)
 	}
 	for (i = (_strlen(str) + oE) / 2; i < _strlen(str); i++)
 	{
-		_putchar(str[i]);
+		printf("%c", str[i]);
 	}
-	_putchar('\n');
+	printf("%c", '\n');
 }
